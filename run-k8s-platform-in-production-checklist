@@ -11,7 +11,7 @@ A checklist
 - Architecture extensibility.
 - Issue tracking system
 
-After spending 6 months at Intuit Kubernetes team, we are developing a kubernetes runtime and run a few hundred clusters in production.
+After spending 6 months at the Intuit Kubernetes team, we are developing a kubernetes runtime and running a few hundred clusters in production.
 here is my checklist right now
 
 - Resilient K8s controlplane, minimally 3 control planes, 3 etcd nodes.
@@ -27,7 +27,7 @@ here is my checklist right now
 - Process to develop and reliably upgrade clusters 
 
 I firmly believe that we have unique opportunity and we are solving real challenges that developers are facing, 
-becasue we talk to those developers every day.
+because we talk to those developers every day.
 we need to abstract Kubernetes API, expose less API to developers, make those abstracted API portable, predictable, and reliable,
 for example, we will not expose Horizontal Pod Autoscaler API to developer directly, rather, we will automate auto-scaling for user, 
 which means automatically scale up and down without user intervention and input.

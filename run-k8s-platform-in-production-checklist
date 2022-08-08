@@ -1,0 +1,34 @@
+
+## This is what my understanding of running kubernetes as platform in production in Jan.2022
+A checklist
+- Automated scalability and performance testing
+- Vulnerability scan and threat modeling, and CVE monitoring.
+- Automated metrics monitoring, alert and on-call.
+- Gitops readiness, every aspect of the platform is version controlled through git
+- CI/CD readiness to continuously validate and deliver new platform feature/configure.
+- Disaster recovery.
+- Engineer readiness for operations and continuously development.
+- Architecture extensibility.
+- Issue tracking system
+
+After spending 6 months at Intuit Kubernetes team, we are developing a kubernetes runtime and run a few hundred clusters in production.
+here is my checklist right now
+
+- Resilient K8s controlplane, minimally 3 control planes, 3 etcd nodes.
+- Node health check and auto repair (i.e AWS cluster auto-scaler)
+- Resilient Networking, DNS, Node network, CNI, LB, API GW, Mesh and more.
+- Resilient Storage (cloud storage) 
+- Capacity planning and scaling (namespace, node)
+- Pod autoscaling (i.e HPA)
+- Pod health and alerting
+- Logging and tracing
+- Metrics
+- Security (define and enforce security policies)
+- Process to develop and reliably upgrade clusters 
+
+I firmly believe that we have unique opportunity and we are solving real challenges that developers are facing, 
+becasue we talk to those developers every day.
+we need to abstract Kubernetes API, expose less API to developers, make those abstracted API portable, predictable, and reliable,
+for example, we will not expose Horizontal Pod Autoscaler API to developer directly, rather, we will automate auto-scaling for user, 
+which means automatically scale up and down without user intervention and input.
+

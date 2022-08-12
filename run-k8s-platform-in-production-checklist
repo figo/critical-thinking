@@ -26,9 +26,8 @@ here is my checklist right now (Aug.2022)
 - Security (define and enforce security policies)
 - Process to develop and reliably upgrade clusters 
 
-I firmly believe that we have unique opportunity and we are solving real challenges that developers are facing, 
-because we talk to those developers every day.
+We are solving real challenges that developers are facing, because we talk to those developers every day.
 we need to abstract Kubernetes API, expose less API to developers, make those abstracted API portable, predictable, and reliable,
 for example, we will not expose Horizontal Pod Autoscaler API to developer directly, rather, we will automate auto-scaling for user, 
-which means automatically scale up and down without user intervention and input.
+automatically scale up and down without user intervention and input.
 

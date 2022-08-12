@@ -11,8 +11,8 @@ A checklist
 - Architecture extensibility.
 - Issue tracking system
 
-After spending 6 months at the Intuit Kubernetes team, we are developing a kubernetes runtime and running a few hundred clusters in production.
-here is my checklist right now (Aug.2022)
+After spending 6 months at the Intuit Kubernetes team, we not only developed a kubernetes runtime, but also 
+build a kubernete platform with several hundreds medium size clusters in production, here is my checklist right now (Aug.2022)
 
 - Resilient K8s controlplane, minimally 3 control planes, 3 etcd nodes.
 - Node health check and auto repair (i.e AWS cluster auto-scaler)
